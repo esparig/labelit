@@ -1,0 +1,9 @@
+{
+  "name": "LabelIt",
+  "version": "0.1.0",
+  "description": "a small and simple labeling app for your dataset",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  }
+}

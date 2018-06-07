@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Label It!</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Responsive Image Gallery with jQuery" />
+  <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel='stylesheet' type='text/css' href="bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+
+  <noscript>
+    <style>
+    .es-carousel ul{
+      display:block;
+    }
+    </style>
+  </noscript>
+  <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+  <div class="rg-image-wrapper">
+  {{if itemsCount > 1}}
+  <div class="rg-image-nav">
+  <a href="#" class="rg-image-nav-prev">Previous Image</a>
+  <a href="#" class="rg-image-nav-next">Next Image</a>
+  </div>
+  {{/if}}
+  <div class="rg-image"></div>
+  <div class="rg-loading"></div>
+  <div class="rg-caption-wrapper">
+  <div class="rg-caption" style="display:none;">
+  <p></p>
+  </div>
+  </div>
+  </div>
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Label It<span>Etiqueta tus muestras fácilmente</span></h1>
+      <form>
+        <div class="rg-button-wrapper form-group row" style="opacity:0.9">
+          <input id="load-directory" type="file" class="col-md-10 form-control" webkitdirectory />
+          <button type="button" class="col-md-2 btn btn-secondary" onclick="LabelIt.load()">Cargar</button>
+        </div>
+      </form>
+      <div id="alert1" class="alert alert-danger" role="alert" style="display: none;">
+        Necesita añadir el archivo categories.json a su carpeta. Obtenga un ejemplo <a href="resources/categories.json" style="color: #721c24; font-weight: bold;" download>aquí</a>.
+      </div>
+      <div id="alert2" class="alert alert-danger" role="alert" style="display: none;">
+        El número máximo de categorías permitido es 9.
+      </div>
+      <div id="rg-gallery" class="rg-gallery">
+        <div class="rg-thumbs">
+          <!-- Elastislide Carousel Thumbnail Viewer -->
+          <div class="es-carousel-wrapper">
+            <div class="es-nav">
+              <span class="es-nav-prev">Previous</span>
+              <span class="es-nav-next">Next</span>
+            </div>
+            <div class="es-carousel">
+              <ul>
+              </ul>
+            </div>
+          </div>
+          <!-- End Elastislide Carousel Thumbnail Viewer -->
+        </div><!-- rg-thumbs -->
+      </div><!-- rg-gallery -->
+      <div id="rg-categories" class="rg-button-wrapper" style="opacity:0.8">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        </div>
+      </div>
+    </div><!-- content -->
+  </div><!-- container -->
+
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="./js/jquery.elastislide.js"></script>
+  <script type="text/javascript" src="./js/labelit.js"></script>
+  <script type="text/javascript" src="./js/gallery.js"></script>
+  <script type="text/javascript" src="./js/categories.js"></script>
+</body>
+</html>

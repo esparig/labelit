@@ -1,0 +1,12 @@
+ImagesLoaded plugin from https://github.com/desandro/imagesloaded
+License: https://desandro.mit-license.org/
+
+Elastislide plugin created by Codrops from https://tympanus.net/codrops/2011/09/12/elastislide-responsive-carousel/
+License: http://tympanus.net/codrops/licensing/ MIT License
+
+Background Pattern(s) from http://subtlepatterns.com/
+License: http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+Bootstrap JS and CSS from https://github.com/twbs/bootstrap/archive/v4.1.1.zip
+License: https://github.com/twbs/bootstrap/blob/v4.1.1/LICENSE
+
